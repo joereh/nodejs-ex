@@ -24,7 +24,7 @@ if (mongoURL == null) {
     mongoPassword = process.env[mongoServiceName + '_PASSWORD'];
     mongoUser = process.env[mongoServiceName + '_USER'];
 
-  // If using env vars from secret from service binding  
+  // If using env vars from secret  from service binding  
   } else if (process.env.database_name) {
     mongoDatabase = process.env.database_name;
     mongoPassword = process.env.password;
